@@ -1,0 +1,340 @@
+@media (max-width: 992px) {
+
+  
+  .wireless__info {
+    max-width: 50%;
+    width: auto;
+  }
+  .wireless__image {
+    max-width: 150px;
+  }
+  .wireless__name {
+    font-size: 25px;
+  }
+  .wireless__button {
+    width: 30px;
+    height: 30px;
+  }
+  .wireless__price {
+    font-size: 25px;
+  }
+  .wireless__buyInfo {
+    padding-top: 15px;
+    gap: 10px;
+  }
+  .wireless__quantity-button {
+    width: 20px;
+    font-size: 15px;
+  }
+  .wireless__quantity span {
+    font-size: 25px;
+  }
+  .wireless__buy {
+    font-size: 25px;
+    padding: 0 30px;
+  }
+  .wireless__content-img {
+    max-width: 100%;
+  }
+
+  .wireless__content-img img {
+    max-width: 200px
+  }
+
+  .info__container {
+    align-items: center;
+  }
+
+  .info__text {
+    font-size: 20px;
+  }
+  .info__card-text {
+    font-size: 20px;
+  }
+  .info__card-img img{
+        width: 100px;
+  }
+
+  .cards__name {
+    font-size: 20px;
+
+  }
+  .cards__text {
+    font-size: 18px;
+  }
+
+  .cards__card {
+    gap: 8px;
+  }
+  .cards__icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .advertising__container {
+    gap: 20px;
+  }
+
+  .advertising__title {
+    font-size: 35px;
+    line-height: 0;
+  }
+  .advertising__btn button{
+        font-size: 20px;
+        padding: 0 30px;
+  }
+
+  .products__image {
+    padding-bottom: 15px;
+  }
+
+  .products__title {
+    font-size: 35px;
+  }
+  .products__name {
+    font-size: 20px;
+  }
+
+  .products__desctiption {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .products__price {
+    font-size: 13px;
+    padding-bottom: 15px;
+  }
+  .products__btn button {
+    font-size: 20px;
+    padding: 0 30px;
+  }
+  .products__learnMore a {
+    font-size: 12px;
+  }
+  .footer__list {
+    gap: 20px;
+  }
+  .footer__item {
+    font-size: 20px;
+  }
+  .footer__number {
+    font-size: 18px;
+  }
+  .footer__address-main {
+    font-size: 20px;
+  }
+  .footer__address-country {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+  .burger__button {
+    display: flex;
+  }
+  .wireless__content {
+    width: 100%;
+  }
+  .wireless__content-img {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  .wireless__image {
+    max-width: 120px;
+  }
+  .wireless__name {
+    font-size: 20px;
+  }
+  .wireless__buttons {
+    gap: 10px;
+  }
+  .wireless__button {
+    width: 20px;
+    height: 20px;
+  }
+  .wireless__price {
+    font-size: 20px;
+    text-align: center;
+  }
+  .wireless__quantity {
+    gap: 10px;
+  }
+  .wireless__quantity span {
+    font-size: 20px;
+  }
+  .wireless__buy {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .cards__conatiner{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .products__image img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wireless__info {
+    max-width: 100%;
+  }
+  .wireless__content-img{
+    display: none;
+  }
+  .wireless__container{
+    flex-direction: column;
+  }
+  .wireless__titles {
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .wireless__title {
+    text-align: left;
+  }
+  .wireless__subtitle{
+    line-height: 144%;
+  }
+  .wireless__image {
+    max-width: 200px;
+  }
+  .wireless__name{
+    font-size: 35px;
+  }
+  .wireless__slider {
+    gap: 10px;
+  }
+  .wireless__button{
+    width: 40px;
+    height: 40px;
+  }
+  .wireless__price{
+    font-size: 30px;
+  }
+  .wireless__quantity span{
+    font-size: 30px;
+  }
+  .wireless__quantity-button{
+    font-size: 20px;
+    width: 30px;
+  }
+  .wireless__buy{
+    font-size: 30px;
+    width: 200px;
+  }
+  
+  .info__image {
+    display: none;
+  }
+
+  .info__text {
+    padding-bottom: 30px;
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  .info__card-text {
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  .info__card-img img{
+    width: 80px;
+  }
+
+  .advertising__title {
+    font-size: 25px;
+  }
+
+  .advertising__container {
+    gap: 15px;
+  }
+  .advertising__image{
+    padding-bottom: 20px;
+  }
+  .advertising__btn button{
+    font-size: 17px;
+  }
+
+  .advertising__text {
+    font-size: 12px;
+  }
+
+  .products__title{
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .products__cards {
+    flex-direction: column;
+  }
+
+  .products__image img {
+    height: 250px;
+  }
+
+  .products__name{
+    font-size: 35px;
+  }
+  .products__desctiption {
+    font-size: 30px;
+  }
+  .products__price{
+    font-size: 25px;
+  }
+
+  .products__btn button {
+    font-size: 25px;
+  }
+
+  .footer__list {
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+  .footer__number {
+    text-align: center;
+    font-size: 15px;
+  }
+  .footer__address-main{
+    font-size: 15px;
+  }
+
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__address-country{
+    display: block;
+    align-items: center;
+    font-size: 15px;
+  }
+  .scrollToTopBtn{
+    width: 30px;
+    height: 30px;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    /* padding: 40px; */
+    background: rgb(239, 239, 239);
+    position: absolute;
+    right: 0;
+    top: 46px;
+    width: 100%;
+    height: 100vh;
+  }
+}
+

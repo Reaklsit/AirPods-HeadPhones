@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/nulling.css" />
+    <link rel="stylesheet" href="./styles/style.css" class="styleshet" />
+    <link rel="stylesheet" href="./styles/media.css" />
+  </head>
+  <body>
+    <div class="root">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo">
+            <img src="./images/Group 9.svg" alt="" />
+          </div>
+          <nav class="header__navbar">
+            <ul class="header__list" id="headerList">
+              <li class="header__item"><a href="">Home</a></li>
+              <li class="header__item"><a href="">Product</a></li>
+              <li class="header__item"><a href="">Features</a></li>
+              <li class="header__item"><a href="">Support</a></li>
+            </ul>
+          </nav>
+          <div class="header__btn">
+            <button class="first__btn">Account</button>
+          </div>
+          <div class="burger__button" onclick="burgerToggle()">
+            <img id="burgerIcon" src="./images/menu.png" alt="" />
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="wireless">
+          <div class="wireless__container container">
+            <div class="wireless__content">
+              <div class="wireless__titles">
+                <h2 class="wireless__subtitle">Wireless.</h2>
+                <h1 class="wireless__title">Effortless.</h1>
+                <h2 class="wireless__subtitle">Magical.</h2>
+              </div>
+
+              <div class="wireless__content-img">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="wireless__content-slide">
+                        <img src="./images/airpodspro0.2header.png" alt="" />
+                        
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="wireless__content-slide">
+                        <img src="./images/airpodswhite.png" alt="" />
+                        
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="wireless__content-slide">
+                        <img src="./images/airpods2full.png" alt="" />
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wireless__info">
+              <div class="wireless__slider">
+                <div class="wireless__image">
+                  <img
+                    src="./images/airpodswhite.png"
+                    id="productImage"
+                    alt=""
+                  />
+                </div>
+                <div class="wireless__name" id="productName">AirPods 2</div>
+                <div class="wireless__buttons">
+                  <button
+                    class="wireless__button"
+                    id="clickpointer"
+                    onclick="changeProduct('AirPods 2', '199€', './images/airpodswhite.png')"
+                  ></button>
+                  <button
+                    class="wireless__button"
+                    onclick="changeProduct('AirPods 2', '249€', './images/airpodsblue.png')"
+                  ></button>
+                  <button
+                    class="wireless__button"
+                    onclick="changeProduct('AirPods 2', '259€', './images/airpodspinks0.1.png')"
+                  ></button>
+                </div>
+                <div class="wireless__buyInfo">
+                  <span class="wireless__price" id="productPrice"
+                    >Price: 199€</span
+                  >
+                  <div class="wireless__quantity">
+                    <button
+                      class="decrease wireless__quantity-button"
+                      onclick="decreaseQuantity()"
+                    >
+                      -
+                    </button>
+                    <span id="quantity">1</span>
+                    <button
+                      class="increase wireless__quantity-button"
+                      onclick="increaseQuantity()"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <button class="wireless__buy">Buy</button>
+                </div>
+              </div>
+              <div class="wireless__info-text">
+                After a simple one-tap setup, AirPods are automatically on and
+                always connected.1 Using them is just as easy. They sense when
+                they’re in your ears and pause when you take them out. And the
+                AirPods experience is just as amazing whether you’re using them
+                with your iPhone, Apple Watch, iPad, Mac or Apple TV.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="info">
+          <div class="info__container container">
+            <div class="info__content">
+              <p class="info__text">
+                A redesigned inward-facing microphone works with voice
+                enhancement algorithms to better recognise and articulate your
+                voice, so it sounds more natural when you’re on phone and video
+                calls.
+              </p>
+              <div class="info__cards">
+                <div class="info__card">
+                  <div class="info__card-img">
+                    <img src="./images/airpodsimage.png" alt="" />
+                  </div>
+                  <p class="info__card-text">
+                    A custom-built driver and amplifier work with the H2 chip to
+                    provide lower distortion during playback, so you’ll hear
+                    deeper bass and crisper highs — across all volume levels.
+                  </p>
+                </div>
+                <div class="info__card">
+                  <div class="info__card-img">
+                    <img src="./images/H2.png" alt="" />
+                  </div>
+                  <p class="info__card-text">
+                    The brand-new H2 chip using computational algorithms to
+                    deliver even smarter noise cancellation, superior
+                    three-dimensional sound and more efficient battery life —
+                    all at once.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="info__image">
+              <img src="./images/image0.1.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="cards">
+          <div class="cards__conatiner container">
+            <div class="cards__card">
+              <div class="cards__icon">
+                <img src="./images/icon0.1.png" alt="" />
+              </div>
+              <h3 class="cards__name">Seamless Switching</h3>
+              <p class="cards__text">
+                Automatic switching allows sound to move seamlessly between your
+                iPhone, Apple Watch, iPad, Mac and Apple TV. If you’re playing
+                music on your Mac, you can answer a call on your iPhone —
+                without having to switch devices.
+              </p>
+            </div>
+            <div class="cards__card">
+              <div class="cards__icon">
+                <img src="./images/icon0.2.png" alt="" />
+              </div>
+              <h3 class="cards__name">Seamless Switching</h3>
+              <p class="cards__text">
+                Automatic switching allows sound to move seamlessly between your
+                iPhone, Apple Watch, iPad, Mac and Apple TV. If you’re playing
+                music on your Mac, you can answer a call on your iPhone —
+                without having to switch devices.
+              </p>
+            </div>
+            <div class="cards__card">
+              <div class="cards__icon">
+                <img src="./images/icon0.3.png" alt="" />
+              </div>
+              <h3 class="cards__name">Seamless Switching</h3>
+              <p class="cards__text">
+                Automatic switching allows sound to move seamlessly between your
+                iPhone, Apple Watch, iPad, Mac and Apple TV. If you’re playing
+                music on your Mac, you can answer a call on your iPhone —
+                without having to switch devices.
+              </p>
+            </div>
+            <div class="cards__card">
+              <div class="cards__icon">
+                <img src="./images/icon0.4.png" alt="" />
+              </div>
+              <h3 class="cards__name">Seamless Switching</h3>
+              <p class="cards__text">
+                Automatic switching allows sound to move seamlessly between your
+                iPhone, Apple Watch, iPad, Mac and Apple TV. If you’re playing
+                music on your Mac, you can answer a call on your iPhone —
+                without having to switch devices.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="video">
+          <video width="100%" height="100%" autoplay loop muted>
+            <source
+              src="./video/All-new Airpods Pro Reveal (4K).mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </section>
+        <section class="advertising">
+          <div class="advertising__container container">
+            <div class="advertising__image">
+              <img src="./images/airpodsinsidecases.png" alt="" />
+            </div>
+            <h2 class="advertising__title">Say it in a way only you can.</h2>
+            <div class="advertising__text">
+              Discover new engraving options for AirPods. Mix emoji, text and
+              numbers.
+            </div>
+            <div class="advertising__btn">
+              <button>Buy AirPods Pro</button>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="products__container container">
+            <h2 class="products__title">Which AirPods are right for you?</h2>
+            <div class="products__cards">
+              <div class="products__card">
+                <div class="products__image">
+                  <img src="./images/airpodsfirst-transformed.png" alt="" />
+                </div>
+                <div class="products__name">AirPods</div>
+                <div class="products__desctiption">2nd generation</div>
+                <div class="products__price">169.00 €</div>
+                <div class="products__btn">
+                  <button>Buy</button>
+                </div>
+                <div class="products__learnMore">
+                  <a href="">Learn more</a>
+                </div>
+              </div>
+              <div class="products__card">
+                <div class="products__image">
+                  <img src="./images/airpodssecond-transformed.png" alt="" />
+                </div>
+                <div class="products__name">AirPods</div>
+                <div class="products__desctiption">2nd generation</div>
+                <div class="products__price">149.00 €</div>
+                <div class="products__btn">
+                  <button>Buy</button>
+                </div>
+                <div class="products__learnMore">
+                  <a href="">Learn more</a>
+                </div>
+              </div>
+              <div class="products__card">
+                <div class="products__image">
+                  <img
+                    src="./images/airpodssecondpro-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+                <div class="products__name">AirPods</div>
+                <div class="products__desctiption">2nd generation</div>
+                <div class="products__price">199.00 €</div>
+                <div class="products__btn">
+                  <button>Buy</button>
+                </div>
+                <div class="products__learnMore">
+                  <a href="">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <img
+        class="scrollToTopBtn"
+        id="scrollToTopBtn"
+        onclick="scrollToTop()"
+        src="./images/arrow.png"
+        alt=""
+      />
+      <footer class="footer">
+        <div class="footer__contianer container">
+          <nav class="footer__navbar">
+            <ul class="footer__list">
+              <li class="footer__item">Product</li>
+              <li class="footer__item">Features</li>
+              <li class="footer__item">Support</li>
+            </ul>
+          </nav>
+          <div class="footer__info">
+            <div class="footer__number">
+              More ways to shop: Find a retailer near you. Or call +31638924940.
+            </div>
+            <div class="footer__address">
+              <div class="footer__address-main">
+                Email: tymofii.popov.work@gmail.com
+              </div>
+              <div class="footer__address-country">
+                The Netherlands, Breda 4811DG
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
